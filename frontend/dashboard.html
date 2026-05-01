@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DS Technologies Dashboard</title>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <style>
+    body {
+      background: linear-gradient(to right, #141e30, #243b55);
+      color: white;
+      font-family: Arial;
+      text-align: center;
+    }
+
+    .card {
+      display: inline-block;
+      margin: 15px;
+      padding: 20px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 10px;
+      width: 220px;
+    }
+
+    .about {
+      margin-top: 30px;
+      padding: 20px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 10px;
+      width: 70%;
+      margin: auto;
+    }
+
+    .btn {
+      margin-top: 15px;
+      padding: 10px;
+      background: #00c6ff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>DS Technologies</h1>
+<h3>Secure Login & Activity Monitoring System</h3>
+
+<!-- Features -->
+<div>
+  <div class="card">
+    <h3>Security</h3>
+    <p>Detect suspicious logins</p>
+  </div>
+
+  <div class="card">
+    <h3>Analytics</h3>
+    <p>Track login activity</p>
+  </div>
+
+  <div class="card">
+    <h3>Account Safety</h3>
+    <p>Auto lock system</p>
+  </div>
+</div>
+
+<!-- Internships -->
+<div class="about">
+  <h3>🚀 Opportunities</h3>
+
+  <h4>Internships</h4>
+  <p>
+    Web Development <br>
+    Data Science <br>
+    Full Stack Development
+  </p>
+
+  <h4>Courses</h4>
+  <p>
+    Python & ML <br>
+    Full Stack <br>
+    Cloud & DevOps
+  </p>
+</div>
+
+<!-- Admin Access -->
+<button class="btn" onclick="goToAdmin()">Admin Dashboard</button>
+
+<script>
+function goToAdmin() {
+  let password = prompt("Enter Admin Password:");
+
+  if(password === "admin123") {
+    window.location.href = "admin.html";
+  } else {
+    alert("Access Denied");
+  }
+}
+</script>
+
+</body>
+</html>
